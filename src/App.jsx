@@ -1,9 +1,13 @@
+import Buttons from "./component/Buttons"
+import Navbar from "./component/Navbar"
 
 function App() {
 
   return (
-    <div className="h-screen w-full flex items-center justify-center bg-gray-900">
-        <h1 className="text-[40px] text-gray-500 font-bold">Hello Spy</h1>
+    <div className="bg-gray-900">
+      <Navbar />
+
+      <Buttons />
     </div>
   )
 }
