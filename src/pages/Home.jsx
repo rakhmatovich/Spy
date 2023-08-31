@@ -1,6 +1,6 @@
-import Buttons from "../component/Buttons"
-import Footer from "../component/Footer"
-import Navbar from "../component/Navbar"
+import Buttons from "../components/Buttons"
+import Footer from "../components/Footer"
+import Navbar from "../components/Navbar"
 
 function Home() {
 
