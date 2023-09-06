@@ -9,6 +9,7 @@ import Children from "./pages/settings/Children.jsx"
 import TimeMachine from "./pages/settings/TimeMachine.jsx"
 import Game from "./pages/Game"
 import Reference from "./pages/Reference"
+import NewGame from "./pages/NewGame.jsx"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/game' element={<Game />} />
         <Route path='/reference' element={<Reference />} />
         <Route path='/settings' element={<Settings />} />
+        <Route path='/newgame' element={< NewGame />} />
         <Route path='/countries' element={<Countries />} />
         <Route path='/countries' element={<Countries />} />
         <Route path='/sport' element={<Sport />} />
@@ -27,7 +29,6 @@ function App() {
         <Route path='/cultures' element={<Cultures />} />
         <Route path='/children' element={<Children />} />
         <Route path='/timemachine' element={<TimeMachine />} />
-       
       </Routes>
     </BrowserRouter>
   ) 
