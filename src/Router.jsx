@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
+import Settings from "./pages/Settings"
 import Game from "./pages/Game"
 import Reference from "./pages/Reference"
-import Settings from "./pages/Settings"
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
         <Route path='/settings' element={<Settings />} />
       </Routes>
     </BrowserRouter>
-  )
+  ) 
 }
 
 export default App
