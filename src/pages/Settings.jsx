@@ -42,12 +42,7 @@ export default function Settings() {
                 </button>
             </Link>
 
-            <Link to={"/timemachine"}>
-                <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-96 h-14 rounded-full grid-cols-1">
-                    Машина времени
-                </button>
-            </Link>
+            
         </div>
     );
 }
