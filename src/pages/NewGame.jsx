@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import BackButton from "../components/BackButton.jsx";
 import { countryNames } from '../utils/words.js';
 
-export default function NewGame() {
+export default function NewGame({settings, timer, playersCount, spyCount}) {
     const [roles, setRoles] = useState(["You are Spy", "Simple", "Simple", "You are Spy", "Simple","You are Spy","You are Spy", "Simple"])
     const [index, setIndex] = useState(0)
     const [active, setActive] = useState(false)
@@ -19,7 +19,6 @@ export default function NewGame() {
 
     return (
         <div className='flex h-screen bg-gradient-to-br from-gray-900 to-cyan-700 items-center justify-center'>
-            <BackButton />
             <div className="box" onClick={() => {
                 setActive(!active)
             }}>

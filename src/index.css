@@ -100,7 +100,7 @@ body {
 
 .switch[data-isOn="true"] {
   justify-content: flex-end;
-  background-color:greenyellow;
+  background-color: rgba(9, 243, 243, 0.76);
 }
 
 .handle {
