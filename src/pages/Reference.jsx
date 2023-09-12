@@ -1,11 +1,43 @@
 import React from 'react'
 import BackButton from "../components/BackButton.jsx";
 import Footer from "../components/Footer.jsx";
+import { motion } from "framer-motion";
+import AnimatedText from "../components/AnimatedText.jsx";
 
 export default function Reference() {
+
+    const placeholderText = [
+        { type: "heading1", text: "Framer Motion" },
+        {
+            type: "heading2",
+            text: "Animating responsive text!"
+        }
+    ];
+
+    const container = {
+        visible: {
+          transition: {
+            staggerChildren: 0.025
+          }
+        }
+      };
     return (
         <div className='flex relative pb-20 flex-col items-center bg-gradient-to-br from-gray-900 to-cyan-700 w-[100%] h-[100%]'>
-            <BackButton/>
+            <BackButton />
+
+            <motion.div
+                className="App"
+                initial="hidden"
+                animate="visible"
+                // animate={replay ? "visible" : "hidden"}
+                variants={container}
+            >
+                <div className="container">
+                    {placeholderText.map((item, index) => {
+                        return <AnimatedText {...item} key={index} />;
+                    })}
+                </div>
+            </motion.div>
 
             <h1 className='text-gray-300 my-8 text-center text-3xl md:text-5xl font-bold'>
                 Об игре
@@ -18,7 +50,7 @@ export default function Reference() {
                 ходу игры — гарантируют вам невероятно увлекательное времяпровождение!
             </p>
 
-            <h1 className='text-gray-300 my-8 text-center text-3xl md:text-5xl'>
+            <h1 className='text-gray-300 my-8 text-center text-3xl md:text-5xl font-bold'>
                 Как играть
             </h1>
             <p className='text-cyan-400  my-5 text-lg mg:text-2xl w-[90%] min-w-[300px] text-justify font-bold'>
