@@ -17,6 +17,8 @@ export default function NewGame() {
         if(!active && index < roles.length) editPlayerRole()
     }, [active])
 
+    
+
     return (
         <div className='flex h-screen bg-gradient-to-br from-gray-900 to-cyan-700 items-center justify-center'>
             <BackButton />
