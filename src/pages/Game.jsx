@@ -2,10 +2,8 @@ import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import BackButton from "../components/BackButton.jsx";
 
-export default function Game() {
-    const [timer, setTimer] = useState(1)
-    const [playersCount, setPlayersCount] = useState(3)
-    const [spyCount, setSpyCount] = useState(1)
+export default function Game({setTimer, playersCount, setPlayersCount, setSpyCount}) {
+
 
     const times = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
     const players = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
@@ -57,15 +55,16 @@ export default function Game() {
                         ))}
                     </select>
                 </div>
-
-                <button
-                    className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-80 h-14 rounded-full  grid-cols-1'>Все
-                    локации
-                </button>
+                <Link to={'/settings'}>
+                    <button
+                        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-80 h-14 rounded-full  grid-cols-1'>
+                        Все локации
+                    </button>
+                </Link>
                 <Link to={'/newgame'}>
                     <button
-                        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-80 h-14 rounded-full  grid-cols-1'>Начать
-                        игру
+                        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-80 h-14 rounded-full  grid-cols-1'>
+                        Начать игру
                     </button>
                 </Link>
             </div>
