@@ -6,13 +6,7 @@ import AnimatedText from "../components/AnimatedText.jsx";
 
 export default function Reference() {
 
-    const placeholderText = [
-        { type: "heading1", text: "Framer Motion" },
-        {
-            type: "heading2",
-            text: "Animating responsive text!"
-        }
-    ];
+
 
     const container = {
         visible: {
@@ -32,11 +26,6 @@ export default function Reference() {
                 // animate={replay ? "visible" : "hidden"}
                 variants={container}
             >
-                <div className="container">
-                    {placeholderText.map((item, index) => {
-                        return <AnimatedText {...item} key={index} />;
-                    })}
-                </div>
             </motion.div>
 
             <h1 className='text-gray-300 my-8 text-center text-3xl md:text-5xl font-bold'>

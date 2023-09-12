@@ -30,7 +30,6 @@ export const countryNames = [
     {name: "Узбекистан"},
 ]
 
-
 export const sportNames = [
     {name: "Спорт площадка"},
     {name: "Футбольный стадион"},
