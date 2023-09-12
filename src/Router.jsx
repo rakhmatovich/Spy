@@ -9,6 +9,7 @@ import Children from "./pages/settings/Children.jsx"
 import Game from "./pages/Game"
 import Reference from "./pages/Reference"
 import NewGame from "./pages/NewGame.jsx"
+import Timer from "./components/Timer"
 
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
         <Route path='/travel' element={<Travel />} />
         <Route path='/cultures' element={<Cultures />} />
         <Route path='/children' element={<Children />} />
+
+        <Route path='/timer' element={<Timer />} />
+
       </Routes>
     </BrowserRouter>
   ) 

@@ -9,14 +9,14 @@ export default function Game() {
 
     const times = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
     const players = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-    const [spySelect, setSpySelect] = useState([1, 2])
+    const [spySelect, setSpySelect] = useState([1])
 
     useEffect(() => {
         let fillArr = []
-        for (let i = 0; i < Math.round(playersCount * 0.445); i++) {
+        for (let i = 0; i < Math.round(playersCount * 0.444); i++) {
             fillArr.push(i + 1)
         }
-        if (fillArr.length > 2) setSpySelect(fillArr)
+        setSpySelect(fillArr)
     }, [playersCount]);
 
     return (
