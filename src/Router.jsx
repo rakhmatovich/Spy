@@ -49,7 +49,6 @@ function App() {
                 <Route path='/newgame' element={
                     <NewGame
                         settings={settings}
-                        timer={timer}
                         playersCount={playersCount}
                         spyCount={spyCount}
                     />
@@ -61,7 +60,7 @@ function App() {
                 <Route path='/cultures' element={<Cultures/>}/>
                 <Route path='/children' element={<Children/>}/>
 
-                <Route path='/timer' element={<Timer/>}/>
+                <Route path='/timer' element={<Timer seconds={timer*60}/>}/>
 
             </Routes>
         </BrowserRouter>
