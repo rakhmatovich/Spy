@@ -1,15 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton.jsx";
-import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Settings({settings, setSettings}) {
-  const [isOn, setIsOn] = useState(true);
-  const [isOn1, setIsOn1] = useState(true);
-  const [isOn2, setIsOn2] = useState(true);
-  const [isOn3, setIsOn3] = useState(true);
-  const [isOn4, setIsOn4] = useState(true);
 
   const switchSettings = index => {
     setSettings(settings.map((setting, i) => {

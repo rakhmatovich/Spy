@@ -11,6 +11,8 @@ import Reference from "./pages/Reference"
 import NewGame from "./pages/NewGame.jsx"
 import Timer from "./components/Timer"
 import {useEffect, useState} from "react";
+import Result from "./components/Result"
+import Loading from "./components/Loading"
 
 const initialSettings = [
     {id: 1, name: 'Страны', status: true},
@@ -40,20 +42,17 @@ function App() {
                     <Game
                         setTimer={setTimer}
                         playersCount={playersCount}
+                        spyCount={spyCount}
                         setPlayersCount={setPlayersCount}
                         setSpyCount={setSpyCount}
+                        settings={settings}
                     />
                 }/>
                 <Route path='/reference' element={<Reference/>}/>
                 <Route path='/settings' element={<Settings settings={settings} setSettings={setSettings}/>}/>
                 <Route path='/newgame' element={
-                    <NewGame
-                        settings={settings}
-                        playersCount={playersCount}
-                        spyCount={spyCount}
-                    />
+                    <NewGame />
                 }/>
-                <Route path='/countries' element={<Countries/>}/>
                 <Route path='/countries' element={<Countries/>}/>
                 <Route path='/sport' element={<Sport/>}/>
                 <Route path='/travel' element={<Travel/>}/>
@@ -61,6 +60,8 @@ function App() {
                 <Route path='/children' element={<Children/>}/>
 
                 <Route path='/timer' element={<Timer seconds={timer*60}/>}/>
+                <Route path="/results" element={<Result />} />
+                <Route path='/loading' element={<Loading />} />
 
             </Routes>
         </BrowserRouter>

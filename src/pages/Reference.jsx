@@ -16,7 +16,7 @@ export default function Reference() {
         }
       };
     return (
-        <div className='flex relative pb-20 flex-col items-center bg-gradient-to-br from-gray-900 to-cyan-700 w-[100%] h-[100%]'>
+        <div className='flex relative pb-20 flex-col items-center bg-gradient-to-br from-gray-900 to-cyan-700 w-[100%]'>
             <BackButton />
 
             <motion.div
