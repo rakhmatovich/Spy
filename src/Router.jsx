@@ -34,6 +34,10 @@ function App() {
         localStorage.setItem('settings', json)
     }, [settings]);
 
+    useEffect(() => {
+        window.history.back = () => {}
+    }, [])
+
     return (
         <BrowserRouter>
             <Routes>
