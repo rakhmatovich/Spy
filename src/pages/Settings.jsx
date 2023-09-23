@@ -32,7 +32,7 @@ export default function Settings({settings, setSettings}) {
         <h1 className='text-center text-white text-4xl font-semibold mb-10'>Все локации</h1>
         <div className="flex gap-6 items-center">
           <Link to={"/countries"}>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[18rem] md:w-96 h-14 rounded-full grid-cols-1">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 min-w-52 w-[70vw] md:w-96 h-14 rounded-full grid-cols-1">
               Страны
             </button>
           </Link>
@@ -42,7 +42,7 @@ export default function Settings({settings, setSettings}) {
         </div>
         <div className="flex gap-6 items-center">
           <Link to={"/sport"}>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[18rem] md:w-96 h-14 rounded-full grid-cols-1">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 min-w-52 w-[70vw] md:w-96 h-14 rounded-full grid-cols-1">
               Спорт
             </button>
           </Link>
@@ -52,7 +52,7 @@ export default function Settings({settings, setSettings}) {
         </div>
         <div className="flex gap-6 items-center">
           <Link to={"/travel"}>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[18rem] md:w-96 h-14 rounded-full grid-cols-1">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 min-w-52 w-[70vw] md:w-96 h-14 rounded-full grid-cols-1">
               Путешествия
             </button>
           </Link>
@@ -62,7 +62,7 @@ export default function Settings({settings, setSettings}) {
         </div>
         <div className="flex gap-6 items-center">
           <Link to={"/cultures"}>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[18rem] md:w-96 h-14 rounded-full grid-cols-1">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 min-w-52 w-[70vw] md:w-96 h-14 rounded-full grid-cols-1">
               Культура
             </button>
           </Link>
@@ -72,7 +72,7 @@ export default function Settings({settings, setSettings}) {
         </div>
         <div className="flex gap-6 items-center">
           <Link to={"/children"}>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[18rem] md:w-96 h-14 rounded-full grid-cols-1">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 min-w-52 w-[70vw] md:w-96 h-14 rounded-full grid-cols-1">
               Дети
             </button>
           </Link>
