@@ -18,7 +18,7 @@ function Timer({ seconds = 60 }) {
           colors={['#004777', '#F7B801', '#A30000', '#A30000']}
           colorsTime={[seconds, seconds / 2, seconds / 100 * 25, 0]}
         >
-          {({ remainingTime }) => "0" + Math.floor(remainingTime / 60) + ":" + ((remainingTime % 60 >= 1 && remainingTime % 60 <= 9)
+          {({ remainingTime }) => (Math.floor(remainingTime / 60).toLocaleString().length === 1 ? "0" + Math.floor(remainingTime / 60) : Math.floor(remainingTime / 60)) + ":" + ((remainingTime % 60 >= 1 && remainingTime % 60 <= 9)
             ? "0" + (remainingTime % 60) :
             (remainingTime % 60) === 0 ? "00" : (remainingTime % 60))}
         </CountdownCircleTimer>

@@ -18,8 +18,6 @@ export default function NewGame() {
         if (!active && index === roles.length) setStart(true)
     }, [active])
 
-    console.log(roles);
-
     function editPlayerRole()  {
         setIndex(index + 1)
         setTimeout(() => setPlayer(roles[index]), 200)
