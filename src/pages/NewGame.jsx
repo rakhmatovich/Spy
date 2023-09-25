@@ -42,7 +42,7 @@ export default function NewGame() {
                         <p className='text-3xl text-cyan-500'>Узнай, кто ты?</p>
                     </div>
                     <div className="box-back flex flex-row items-center justify-center">
-                        <h2 className='text-3xl text-cyan-500'>{player === 'Шпион'? 'Ты Шпион🤫': `Слово ${player}`}</h2>
+                        <h2 className='text-3xl text-cyan-500'>{player === 'Шпион'? 'Ты Шпион🤫': `Слово: <span className="font-bold">${player}</span>`}</h2>
                     </div>
                 </div>
             </div> : ""}
